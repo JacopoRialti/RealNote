@@ -3,4 +3,4 @@ project(RealNote)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(RealNote main.cpp)
+add_executable(RealNote main.cpp Subject.h Observer.h)
