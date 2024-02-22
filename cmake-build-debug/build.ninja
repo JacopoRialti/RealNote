@@ -61,6 +61,12 @@ build CMakeFiles/RealNote.dir/Note.cpp.obj: CXX_COMPILER__RealNote_unscanned_Deb
   OBJECT_DIR = CMakeFiles\RealNote.dir
   OBJECT_FILE_DIR = CMakeFiles\RealNote.dir
 
+build CMakeFiles/RealNote.dir/Collection.cpp.obj: CXX_COMPILER__RealNote_unscanned_Debug C$:/Users/39393/Desktop/RealNote/Collection.cpp || cmake_object_order_depends_target_RealNote
+  DEP_FILE = CMakeFiles\RealNote.dir\Collection.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\RealNote.dir
+  OBJECT_FILE_DIR = CMakeFiles\RealNote.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target RealNote
@@ -69,7 +75,7 @@ build CMakeFiles/RealNote.dir/Note.cpp.obj: CXX_COMPILER__RealNote_unscanned_Deb
 #############################################
 # Link the executable RealNote.exe
 
-build RealNote.exe: CXX_EXECUTABLE_LINKER__RealNote_Debug CMakeFiles/RealNote.dir/main.cpp.obj CMakeFiles/RealNote.dir/Note.cpp.obj
+build RealNote.exe: CXX_EXECUTABLE_LINKER__RealNote_Debug CMakeFiles/RealNote.dir/main.cpp.obj CMakeFiles/RealNote.dir/Note.cpp.obj CMakeFiles/RealNote.dir/Collection.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\RealNote.dir

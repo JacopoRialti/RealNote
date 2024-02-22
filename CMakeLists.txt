@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(RealNote main.cpp Subject.h Observer.h
         Note.cpp
-        Note.h)
+        Note.h
+        Collection.cpp
+        Collection.h)

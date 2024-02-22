@@ -80,15 +80,18 @@ void Note::setStarred(bool new_starred)
     starred = new_starred;
 }
 
-void Note::attach(Observer *observer) {
+void Note::subscribe(Observer *observer)
+{
     observers.push_back(observer);
 }
 
-void Note::detach(Observer *observer) {
+void Note::unsubscribe(Observer *observer)
+{
     observers.remove(observer);
 }
 
-void Note::notify() {
+void Note::notify()
+{
     for (auto &observer : observers) {
         observer->update();
     }

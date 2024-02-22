@@ -43,9 +43,9 @@ public:
     void setStarred(bool new_starred);
 
     //Attach, detach and notify
-    void attach(Observer *observer) override;
+    void subscribe(Observer *observer) override;
 
-    void detach(Observer *observer) override;
+    void unsubscribe(Observer *observer) override;
 
     void notify() override;
 
