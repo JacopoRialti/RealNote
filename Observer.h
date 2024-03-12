@@ -6,9 +6,11 @@
 #define REALNOTE_OBSERVER_H
 
 
+class Note;
+
 class Observer {
 public:
-    virtual void update() = 0;
+    virtual void update(Note& note) = 0;
     virtual ~Observer() = default;
 };
 #endif //REALNOTE_OBSERVER_H

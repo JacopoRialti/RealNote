@@ -19,9 +19,9 @@ public:
     ~Collection() override;
 
     //Add and remove notes from the collection
-    void addNoteToCollection(Note *new_note);
+    virtual void addNoteToCollection(Note *new_note);
 
-    bool removeNoteFromCollection(int index);
+    virtual bool removeNoteFromCollection(int index);
 
     //Modifies the title and text of the note
     bool modifyNoteInCollection(int index, std::string title, std::string text);
@@ -36,9 +36,12 @@ public:
 
     std::list<Note*> getNoteList() const;
 
-    void update() override;
+    void update(Note &note) override;
 
-private:
+    virtual void showCollection();
+
+
+protected:
     std::list<Note*> note_list;
     std::string name;
 };

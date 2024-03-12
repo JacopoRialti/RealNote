@@ -23,6 +23,7 @@ void Collection::addNoteToCollection(Note *new_note)
 {
     note_list.push_back(new_note);
     new_note->subscribe(this);
+
 }
 
 bool Collection::removeNoteFromCollection(int index)
@@ -35,7 +36,7 @@ bool Collection::removeNoteFromCollection(int index)
             return true;
         }
         i++;
-    }
+    } return false;
 }
 
 bool Collection::modifyNoteInCollection(int index, std::string title, std::string text)
@@ -44,7 +45,7 @@ bool Collection::modifyNoteInCollection(int index, std::string title, std::strin
     bool found = false;
     for(auto & it : note_list){
         if(i == index){
-            found = it->modfiyNote(title, text);
+            found = it->modifiyNote(title, text);
         }
         i++;
     }
@@ -75,9 +76,17 @@ std::list<Note *> Collection::getNoteList() const
     return note_list;
 }
 
-void Collection::update()
+void Collection::update(Note &note)
 {
-    std::cout << "Collection " << name << " has been updated" << std::endl;
-    //TODO: Implement the update method correctly
+   note_list.remove(&note);
+}
 
+void Collection::showCollection()
+{
+    std::cout << "La collezione " << name << " contiene le seguenti note: " << std::endl;
+    int index = 0;
+    for (auto & it : note_list) {
+        std::cout << "Index: " << index << ", Title: " << it->getTitle() << std::endl;
+        index++;
+    }
 }

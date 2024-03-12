@@ -5,10 +5,10 @@
 #include "Note.h"
 
 
-Note::Note(std::string title, std::string text)
+Note::Note(std::string t, std::string txt)
 {
-    title = title;
-    text = text;
+    title = t;
+    text = txt;
 }
 
 Note::Note(const Note &original)
@@ -22,19 +22,18 @@ Note::Note(const Note &original)
 bool Note::deleteNote()
 {
     if(!this->isLocked()){
-        delete this;
         notify();
+        delete this;
         return true;
     }else
         return false;
 }
 
-bool Note::modfiyNote(std::string title, std::string text)
+bool Note::modifiyNote(std::string title, std::string text)
 {
     if(!this->isLocked()){
         this->setTitle(title);
         this->setText(text);
-        notify();
         return true;
     }else
         return false;
@@ -93,6 +92,6 @@ void Note::unsubscribe(Observer *observer)
 void Note::notify()
 {
     for (auto &observer : observers) {
-        observer->update();
+        observer->update(*this);
     }
 }

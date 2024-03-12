@@ -23,7 +23,7 @@ public:
     bool deleteNote();
 
     //Modifies the title and text of the note
-    bool modfiyNote(std::string title, std::string text);
+    bool modifiyNote(std::string title, std::string text);
 
     //Getters and Setters
     std::string getTitle() const;
