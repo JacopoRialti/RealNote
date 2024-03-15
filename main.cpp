@@ -1,7 +1,7 @@
 #include <iostream>
-#include "Note.h"
-#include "Collection.h"
-#include "Starred.h"
+#include "src/Note.h"
+#include "src/Collection.h"
+#include "src/Starred.h"
 
 int main() {
     Note *nota_volo = new Note("Compare Volo", "Scegliere migliore data per viaggiare");

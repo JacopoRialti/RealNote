@@ -1,20 +1,10 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.5)
 project(RealNote)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(RealNote
-        main.cpp
-        Subject.h
-        Observer.h
-        Note.cpp
-        Note.h
-        Collection.cpp
-        Collection.h
-        Starred.cpp
-        Starred.h
-        GoogleTest/NoteTest.cpp
-)
+add_subdirectory(lib/googletest-main)
 
-add_subdirectory(GoogleTest)
+add_subdirectory(src)
+add_subdirectory(tests)
 

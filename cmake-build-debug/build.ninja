@@ -40,63 +40,6 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/39393/Desktop/RealNote/cmake-build-debug/
-# =============================================================================
-# Object build statements for EXECUTABLE target RealNote
-
-
-#############################################
-# Order-only phony target for RealNote
-
-build cmake_object_order_depends_target_RealNote: phony || CMakeFiles/RealNote.dir
-
-build CMakeFiles/RealNote.dir/main.cpp.obj: CXX_COMPILER__RealNote_unscanned_Debug C$:/Users/39393/Desktop/RealNote/main.cpp || cmake_object_order_depends_target_RealNote
-  DEP_FILE = CMakeFiles\RealNote.dir\main.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\RealNote.dir
-  OBJECT_FILE_DIR = CMakeFiles\RealNote.dir
-
-build CMakeFiles/RealNote.dir/Note.cpp.obj: CXX_COMPILER__RealNote_unscanned_Debug C$:/Users/39393/Desktop/RealNote/Note.cpp || cmake_object_order_depends_target_RealNote
-  DEP_FILE = CMakeFiles\RealNote.dir\Note.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\RealNote.dir
-  OBJECT_FILE_DIR = CMakeFiles\RealNote.dir
-
-build CMakeFiles/RealNote.dir/Collection.cpp.obj: CXX_COMPILER__RealNote_unscanned_Debug C$:/Users/39393/Desktop/RealNote/Collection.cpp || cmake_object_order_depends_target_RealNote
-  DEP_FILE = CMakeFiles\RealNote.dir\Collection.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\RealNote.dir
-  OBJECT_FILE_DIR = CMakeFiles\RealNote.dir
-
-build CMakeFiles/RealNote.dir/Starred.cpp.obj: CXX_COMPILER__RealNote_unscanned_Debug C$:/Users/39393/Desktop/RealNote/Starred.cpp || cmake_object_order_depends_target_RealNote
-  DEP_FILE = CMakeFiles\RealNote.dir\Starred.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\RealNote.dir
-  OBJECT_FILE_DIR = CMakeFiles\RealNote.dir
-
-build CMakeFiles/RealNote.dir/GoogleTest/NoteTest.cpp.obj: CXX_COMPILER__RealNote_unscanned_Debug C$:/Users/39393/Desktop/RealNote/GoogleTest/NoteTest.cpp || cmake_object_order_depends_target_RealNote
-  DEP_FILE = CMakeFiles\RealNote.dir\GoogleTest\NoteTest.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\RealNote.dir
-  OBJECT_FILE_DIR = CMakeFiles\RealNote.dir\GoogleTest
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target RealNote
-
-
-#############################################
-# Link the executable RealNote.exe
-
-build RealNote.exe: CXX_EXECUTABLE_LINKER__RealNote_Debug CMakeFiles/RealNote.dir/main.cpp.obj CMakeFiles/RealNote.dir/Note.cpp.obj CMakeFiles/RealNote.dir/Collection.cpp.obj CMakeFiles/RealNote.dir/Starred.cpp.obj CMakeFiles/RealNote.dir/GoogleTest/NoteTest.cpp.obj
-  FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\RealNote.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = RealNote.exe
-  TARGET_IMPLIB = libRealNote.dll.a
-  TARGET_PDB = RealNote.exe.dbg
-
 
 #############################################
 # Utility command for edit_cache
@@ -167,178 +110,74 @@ build install/strip: phony CMakeFiles/install/strip.util
 # C:/Users/39393/Desktop/RealNote/CMakeLists.txt
 # =============================================================================
 
-# =============================================================================
-# Object build statements for EXECUTABLE target GoogleTest_run
-
-
-#############################################
-# Order-only phony target for GoogleTest_run
-
-build cmake_object_order_depends_target_GoogleTest_run: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
-
-build GoogleTest/CMakeFiles/GoogleTest_run.dir/NoteTest.cpp.obj: CXX_COMPILER__GoogleTest_run_unscanned_Debug C$:/Users/39393/Desktop/RealNote/GoogleTest/NoteTest.cpp || cmake_object_order_depends_target_GoogleTest_run
-  DEP_FILE = GoogleTest\CMakeFiles\GoogleTest_run.dir\NoteTest.cpp.obj.d
-  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/include -isystem C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest
-  OBJECT_DIR = GoogleTest\CMakeFiles\GoogleTest_run.dir
-  OBJECT_FILE_DIR = GoogleTest\CMakeFiles\GoogleTest_run.dir
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target GoogleTest_run
-
-
-#############################################
-# Link the executable GoogleTest\GoogleTest_run.exe
-
-build GoogleTest/GoogleTest_run.exe: CXX_EXECUTABLE_LINKER__GoogleTest_run_Debug GoogleTest/CMakeFiles/GoogleTest_run.dir/NoteTest.cpp.obj | lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
-  FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = GoogleTest\CMakeFiles\GoogleTest_run.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_FILE = GoogleTest\GoogleTest_run.exe
-  TARGET_IMPLIB = GoogleTest\libGoogleTest_run.dll.a
-  TARGET_PDB = GoogleTest_run.exe.dbg
-
 
 #############################################
 # Utility command for edit_cache
 
-build GoogleTest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build lib/googletest-main/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build GoogleTest/edit_cache: phony GoogleTest/CMakeFiles/edit_cache.util
+build lib/googletest-main/edit_cache: phony lib/googletest-main/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build GoogleTest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\39393\Desktop\RealNote -BC:\Users\39393\Desktop\RealNote\cmake-build-debug"
+build lib/googletest-main/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\39393\Desktop\RealNote -BC:\Users\39393\Desktop\RealNote\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build GoogleTest/rebuild_cache: phony GoogleTest/CMakeFiles/rebuild_cache.util
+build lib/googletest-main/rebuild_cache: phony lib/googletest-main/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build GoogleTest/list_install_components: phony
+build lib/googletest-main/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build GoogleTest/CMakeFiles/install.util: CUSTOM_COMMAND GoogleTest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+build lib/googletest-main/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest-main/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build GoogleTest/install: phony GoogleTest/CMakeFiles/install.util
+build lib/googletest-main/install: phony lib/googletest-main/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build GoogleTest/CMakeFiles/install/local.util: CUSTOM_COMMAND GoogleTest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build lib/googletest-main/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest-main/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build GoogleTest/install/local: phony GoogleTest/CMakeFiles/install/local.util
+build lib/googletest-main/install/local: phony lib/googletest-main/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build GoogleTest/CMakeFiles/install/strip.util: CUSTOM_COMMAND GoogleTest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build lib/googletest-main/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest-main/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build GoogleTest/install/strip: phony GoogleTest/CMakeFiles/install/strip.util
+build lib/googletest-main/install/strip: phony lib/googletest-main/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/39393/Desktop/RealNote/GoogleTest/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build GoogleTest/lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build GoogleTest/lib/edit_cache: phony GoogleTest/lib/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build GoogleTest/lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\39393\Desktop\RealNote -BC:\Users\39393\Desktop\RealNote\cmake-build-debug"
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build GoogleTest/lib/rebuild_cache: phony GoogleTest/lib/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build GoogleTest/lib/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build GoogleTest/lib/CMakeFiles/install.util: CUSTOM_COMMAND GoogleTest/lib/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build GoogleTest/lib/install: phony GoogleTest/lib/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build GoogleTest/lib/CMakeFiles/install/local.util: CUSTOM_COMMAND GoogleTest/lib/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build GoogleTest/lib/install/local: phony GoogleTest/lib/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build GoogleTest/lib/CMakeFiles/install/strip.util: CUSTOM_COMMAND GoogleTest/lib/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build GoogleTest/lib/install/strip: phony GoogleTest/lib/CMakeFiles/install/strip.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# C:/Users/39393/Desktop/RealNote/GoogleTest/lib/CMakeLists.txt
+# C:/Users/39393/Desktop/RealNote/lib/googletest-main/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -350,12 +189,12 @@ build GoogleTest/lib/install/strip: phony GoogleTest/lib/CMakeFiles/install/stri
 
 build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-build GoogleTest/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
-  DEP_FILE = GoogleTest\lib\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
+build lib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_COMPILER__gmock_unscanned_Debug C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEP_FILE = lib\googletest-main\googlemock\CMakeFiles\gmock.dir\src\gmock-all.cc.obj.d
   FLAGS = -g -std=c++14 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -IC:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/include -IC:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock -isystem C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/include -isystem C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest
-  OBJECT_DIR = GoogleTest\lib\googlemock\CMakeFiles\gmock.dir
-  OBJECT_FILE_DIR = GoogleTest\lib\googlemock\CMakeFiles\gmock.dir\src
+  INCLUDES = -IC:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/include -IC:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/include -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest
+  OBJECT_DIR = lib\googletest-main\googlemock\CMakeFiles\gmock.dir
+  OBJECT_FILE_DIR = lib\googletest-main\googlemock\CMakeFiles\gmock.dir\src
 
 
 # =============================================================================
@@ -365,9 +204,9 @@ build GoogleTest/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj: CXX_C
 #############################################
 # Link the static library lib\libgmock.a
 
-build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug GoogleTest/lib/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj || lib/libgtest.a
+build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug lib/googletest-main/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj || lib/libgtest.a
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = GoogleTest\lib\googlemock\CMakeFiles\gmock.dir
+  OBJECT_DIR = lib\googletest-main\googlemock\CMakeFiles\gmock.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = lib\libgmock.a
@@ -382,12 +221,12 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug GoogleTest/lib/goog
 
 build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build GoogleTest/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
-  DEP_FILE = GoogleTest\lib\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
+build lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj: CXX_COMPILER__gmock_main_unscanned_Debug C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEP_FILE = lib\googletest-main\googlemock\CMakeFiles\gmock_main.dir\src\gmock_main.cc.obj.d
   FLAGS = -g -std=c++14 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/include -isystem C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock -isystem C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/include -isystem C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest
-  OBJECT_DIR = GoogleTest\lib\googlemock\CMakeFiles\gmock_main.dir
-  OBJECT_FILE_DIR = GoogleTest\lib\googlemock\CMakeFiles\gmock_main.dir\src
+  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/include -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/include -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest
+  OBJECT_DIR = lib\googletest-main\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_FILE_DIR = lib\googletest-main\googlemock\CMakeFiles\gmock_main.dir\src
 
 
 # =============================================================================
@@ -397,9 +236,9 @@ build GoogleTest/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj:
 #############################################
 # Link the static library lib\libgmock_main.a
 
-build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug GoogleTest/lib/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj || lib/libgmock.a lib/libgtest.a
+build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug lib/googletest-main/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj || lib/libgmock.a lib/libgtest.a
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = GoogleTest\lib\googlemock\CMakeFiles\gmock_main.dir
+  OBJECT_DIR = lib\googletest-main\googlemock\CMakeFiles\gmock_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = lib\libgmock_main.a
@@ -409,70 +248,70 @@ build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug GoogleTes
 #############################################
 # Utility command for edit_cache
 
-build GoogleTest/lib/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build lib/googletest-main/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build GoogleTest/lib/googlemock/edit_cache: phony GoogleTest/lib/googlemock/CMakeFiles/edit_cache.util
+build lib/googletest-main/googlemock/edit_cache: phony lib/googletest-main/googlemock/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build GoogleTest/lib/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\39393\Desktop\RealNote -BC:\Users\39393\Desktop\RealNote\cmake-build-debug"
+build lib/googletest-main/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\39393\Desktop\RealNote -BC:\Users\39393\Desktop\RealNote\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build GoogleTest/lib/googlemock/rebuild_cache: phony GoogleTest/lib/googlemock/CMakeFiles/rebuild_cache.util
+build lib/googletest-main/googlemock/rebuild_cache: phony lib/googletest-main/googlemock/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build GoogleTest/lib/googlemock/list_install_components: phony
+build lib/googletest-main/googlemock/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build GoogleTest/lib/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND GoogleTest/lib/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+build lib/googletest-main/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest-main/googlemock/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build GoogleTest/lib/googlemock/install: phony GoogleTest/lib/googlemock/CMakeFiles/install.util
+build lib/googletest-main/googlemock/install: phony lib/googletest-main/googlemock/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build GoogleTest/lib/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND GoogleTest/lib/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build lib/googletest-main/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest-main/googlemock/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build GoogleTest/lib/googlemock/install/local: phony GoogleTest/lib/googlemock/CMakeFiles/install/local.util
+build lib/googletest-main/googlemock/install/local: phony lib/googletest-main/googlemock/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build GoogleTest/lib/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND GoogleTest/lib/googlemock/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build lib/googletest-main/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest-main/googlemock/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main\googlemock && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build GoogleTest/lib/googlemock/install/strip: phony GoogleTest/lib/googlemock/CMakeFiles/install/strip.util
+build lib/googletest-main/googlemock/install/strip: phony lib/googletest-main/googlemock/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/CMakeLists.txt
+# C:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -482,14 +321,14 @@ build GoogleTest/lib/googlemock/install/strip: phony GoogleTest/lib/googlemock/C
 #############################################
 # Order-only phony target for gtest
 
-build cmake_object_order_depends_target_gtest: phony || GoogleTest/lib/googletest/CMakeFiles/gtest.dir
+build cmake_object_order_depends_target_gtest: phony || lib/googletest-main/googletest/CMakeFiles/gtest.dir
 
-build GoogleTest/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
-  DEP_FILE = GoogleTest\lib\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
+build lib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_COMPILER__gtest_unscanned_Debug C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = lib\googletest-main\googletest\CMakeFiles\gtest.dir\src\gtest-all.cc.obj.d
   FLAGS = -g -std=c++14 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -IC:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/include -IC:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest
-  OBJECT_DIR = GoogleTest\lib\googletest\CMakeFiles\gtest.dir
-  OBJECT_FILE_DIR = GoogleTest\lib\googletest\CMakeFiles\gtest.dir\src
+  INCLUDES = -IC:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/include -IC:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest
+  OBJECT_DIR = lib\googletest-main\googletest\CMakeFiles\gtest.dir
+  OBJECT_FILE_DIR = lib\googletest-main\googletest\CMakeFiles\gtest.dir\src
 
 
 # =============================================================================
@@ -499,9 +338,9 @@ build GoogleTest/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj: CXX_C
 #############################################
 # Link the static library lib\libgtest.a
 
-build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug GoogleTest/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug lib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = GoogleTest\lib\googletest\CMakeFiles\gtest.dir
+  OBJECT_DIR = lib\googletest-main\googletest\CMakeFiles\gtest.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = lib\libgtest.a
@@ -516,12 +355,12 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug GoogleTest/lib/goog
 
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
-build GoogleTest/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
-  DEP_FILE = GoogleTest\lib\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
+build lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: CXX_COMPILER__gtest_main_unscanned_Debug C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = lib\googletest-main\googletest\CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d
   FLAGS = -g -std=c++14 -fdiagnostics-color=always -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers
-  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/include -isystem C:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest
-  OBJECT_DIR = GoogleTest\lib\googletest\CMakeFiles\gtest_main.dir
-  OBJECT_FILE_DIR = GoogleTest\lib\googletest\CMakeFiles\gtest_main.dir\src
+  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/include -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest
+  OBJECT_DIR = lib\googletest-main\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_FILE_DIR = lib\googletest-main\googletest\CMakeFiles\gtest_main.dir\src
 
 
 # =============================================================================
@@ -531,9 +370,9 @@ build GoogleTest/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj:
 #############################################
 # Link the static library lib\libgtest_main.a
 
-build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug GoogleTest/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj || lib/libgtest.a
+build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj || lib/libgtest.a
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = GoogleTest\lib\googletest\CMakeFiles\gtest_main.dir
+  OBJECT_DIR = lib\googletest-main\googletest\CMakeFiles\gtest_main.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = lib\libgtest_main.a
@@ -543,75 +382,337 @@ build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug GoogleTes
 #############################################
 # Utility command for edit_cache
 
-build GoogleTest/lib/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+build lib/googletest-main/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build GoogleTest/lib/googletest/edit_cache: phony GoogleTest/lib/googletest/CMakeFiles/edit_cache.util
+build lib/googletest-main/googletest/edit_cache: phony lib/googletest-main/googletest/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build GoogleTest/lib/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\39393\Desktop\RealNote -BC:\Users\39393\Desktop\RealNote\cmake-build-debug"
+build lib/googletest-main/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\39393\Desktop\RealNote -BC:\Users\39393\Desktop\RealNote\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build GoogleTest/lib/googletest/rebuild_cache: phony GoogleTest/lib/googletest/CMakeFiles/rebuild_cache.util
+build lib/googletest-main/googletest/rebuild_cache: phony lib/googletest-main/googletest/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build GoogleTest/lib/googletest/list_install_components: phony
+build lib/googletest-main/googletest/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build GoogleTest/lib/googletest/CMakeFiles/install.util: CUSTOM_COMMAND GoogleTest/lib/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+build lib/googletest-main/googletest/CMakeFiles/install.util: CUSTOM_COMMAND lib/googletest-main/googletest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build GoogleTest/lib/googletest/install: phony GoogleTest/lib/googletest/CMakeFiles/install.util
+build lib/googletest-main/googletest/install: phony lib/googletest-main/googletest/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build GoogleTest/lib/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND GoogleTest/lib/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build lib/googletest-main/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND lib/googletest-main/googletest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build GoogleTest/lib/googletest/install/local: phony GoogleTest/lib/googletest/CMakeFiles/install/local.util
+build lib/googletest-main/googletest/install/local: phony lib/googletest-main/googletest/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build GoogleTest/lib/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND GoogleTest/lib/googletest/all
-  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\GoogleTest\lib\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build lib/googletest-main/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND lib/googletest-main/googletest/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\lib\googletest-main\googletest && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build GoogleTest/lib/googletest/install/strip: phony GoogleTest/lib/googletest/CMakeFiles/install/strip.util
+build lib/googletest-main/googletest/install/strip: phony lib/googletest-main/googletest/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/39393/Desktop/RealNote/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Main
+
+
+#############################################
+# Order-only phony target for Main
+
+build cmake_object_order_depends_target_Main: phony || src/CMakeFiles/Main.dir
+
+build src/CMakeFiles/Main.dir/Collection.cpp.obj: CXX_COMPILER__Main_unscanned_Debug C$:/Users/39393/Desktop/RealNote/src/Collection.cpp || cmake_object_order_depends_target_Main
+  DEP_FILE = src\CMakeFiles\Main.dir\Collection.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = src\CMakeFiles\Main.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Main.dir
+
+build src/CMakeFiles/Main.dir/Note.cpp.obj: CXX_COMPILER__Main_unscanned_Debug C$:/Users/39393/Desktop/RealNote/src/Note.cpp || cmake_object_order_depends_target_Main
+  DEP_FILE = src\CMakeFiles\Main.dir\Note.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = src\CMakeFiles\Main.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Main.dir
+
+build src/CMakeFiles/Main.dir/Starred.cpp.obj: CXX_COMPILER__Main_unscanned_Debug C$:/Users/39393/Desktop/RealNote/src/Starred.cpp || cmake_object_order_depends_target_Main
+  DEP_FILE = src\CMakeFiles\Main.dir\Starred.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = src\CMakeFiles\Main.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Main.dir
+
+build src/CMakeFiles/Main.dir/__/main.cpp.obj: CXX_COMPILER__Main_unscanned_Debug C$:/Users/39393/Desktop/RealNote/main.cpp || cmake_object_order_depends_target_Main
+  DEP_FILE = src\CMakeFiles\Main.dir\__\main.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  OBJECT_DIR = src\CMakeFiles\Main.dir
+  OBJECT_FILE_DIR = src\CMakeFiles\Main.dir\__
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Main
+
+
+#############################################
+# Link the executable src\Main.exe
+
+build src/Main.exe: CXX_EXECUTABLE_LINKER__Main_Debug src/CMakeFiles/Main.dir/Collection.cpp.obj src/CMakeFiles/Main.dir/Note.cpp.obj src/CMakeFiles/Main.dir/Starred.cpp.obj src/CMakeFiles/Main.dir/__/main.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = src\CMakeFiles\Main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = src\Main.exe
+  TARGET_IMPLIB = src\libMain.dll.a
+  TARGET_PDB = Main.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build src/edit_cache: phony src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\39393\Desktop\RealNote -BC:\Users\39393\Desktop\RealNote\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build src/rebuild_cache: phony src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build src/CMakeFiles/install.util: CUSTOM_COMMAND src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build src/install: phony src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build src/CMakeFiles/install/local.util: CUSTOM_COMMAND src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build src/install/local: phony src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build src/CMakeFiles/install/strip.util: CUSTOM_COMMAND src/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\src && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build src/install/strip: phony src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/39393/Desktop/RealNote/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target Tests
+
+
+#############################################
+# Order-only phony target for Tests
+
+build cmake_object_order_depends_target_Tests: phony || cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build tests/CMakeFiles/Tests.dir/__/src/Collection.cpp.obj: CXX_COMPILER__Tests_unscanned_Debug C$:/Users/39393/Desktop/RealNote/src/Collection.cpp || cmake_object_order_depends_target_Tests
+  DEP_FILE = tests\CMakeFiles\Tests.dir\__\src\Collection.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/include -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest
+  OBJECT_DIR = tests\CMakeFiles\Tests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\Tests.dir\__\src
+
+build tests/CMakeFiles/Tests.dir/__/src/Note.cpp.obj: CXX_COMPILER__Tests_unscanned_Debug C$:/Users/39393/Desktop/RealNote/src/Note.cpp || cmake_object_order_depends_target_Tests
+  DEP_FILE = tests\CMakeFiles\Tests.dir\__\src\Note.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/include -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest
+  OBJECT_DIR = tests\CMakeFiles\Tests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\Tests.dir\__\src
+
+build tests/CMakeFiles/Tests.dir/__/src/Starred.cpp.obj: CXX_COMPILER__Tests_unscanned_Debug C$:/Users/39393/Desktop/RealNote/src/Starred.cpp || cmake_object_order_depends_target_Tests
+  DEP_FILE = tests\CMakeFiles\Tests.dir\__\src\Starred.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/include -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest
+  OBJECT_DIR = tests\CMakeFiles\Tests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\Tests.dir\__\src
+
+build tests/CMakeFiles/Tests.dir/CollectionTest.cpp.obj: CXX_COMPILER__Tests_unscanned_Debug C$:/Users/39393/Desktop/RealNote/tests/CollectionTest.cpp || cmake_object_order_depends_target_Tests
+  DEP_FILE = tests\CMakeFiles\Tests.dir\CollectionTest.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/include -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest
+  OBJECT_DIR = tests\CMakeFiles\Tests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\Tests.dir
+
+build tests/CMakeFiles/Tests.dir/NoteTest.cpp.obj: CXX_COMPILER__Tests_unscanned_Debug C$:/Users/39393/Desktop/RealNote/tests/NoteTest.cpp || cmake_object_order_depends_target_Tests
+  DEP_FILE = tests\CMakeFiles\Tests.dir\NoteTest.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/include -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest
+  OBJECT_DIR = tests\CMakeFiles\Tests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\Tests.dir
+
+build tests/CMakeFiles/Tests.dir/StarredTest.cpp.obj: CXX_COMPILER__Tests_unscanned_Debug C$:/Users/39393/Desktop/RealNote/tests/StarredTest.cpp || cmake_object_order_depends_target_Tests
+  DEP_FILE = tests\CMakeFiles\Tests.dir\StarredTest.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/include -isystem C:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest
+  OBJECT_DIR = tests\CMakeFiles\Tests.dir
+  OBJECT_FILE_DIR = tests\CMakeFiles\Tests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Tests
+
+
+#############################################
+# Link the executable tests\Tests.exe
+
+build tests/Tests.exe: CXX_EXECUTABLE_LINKER__Tests_Debug tests/CMakeFiles/Tests.dir/__/src/Collection.cpp.obj tests/CMakeFiles/Tests.dir/__/src/Note.cpp.obj tests/CMakeFiles/Tests.dir/__/src/Starred.cpp.obj tests/CMakeFiles/Tests.dir/CollectionTest.cpp.obj tests/CMakeFiles/Tests.dir/NoteTest.cpp.obj tests/CMakeFiles/Tests.dir/StarredTest.cpp.obj | lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a
+  FLAGS = -g
+  LINK_LIBRARIES = lib/libgtest_main.a  lib/libgtest.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = tests\CMakeFiles\Tests.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tests\Tests.exe
+  TARGET_IMPLIB = tests\libTests.dll.a
+  TARGET_PDB = Tests.exe.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build tests/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\tests && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build tests/edit_cache: phony tests/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build tests/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\tests && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\39393\Desktop\RealNote -BC:\Users\39393\Desktop\RealNote\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build tests/rebuild_cache: phony tests/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build tests/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build tests/CMakeFiles/install.util: CUSTOM_COMMAND tests/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\tests && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -P cmake_install.cmake"
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build tests/install: phony tests/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build tests/CMakeFiles/install/local.util: CUSTOM_COMMAND tests/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\tests && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build tests/install/local: phony tests/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build tests/CMakeFiles/install/strip.util: CUSTOM_COMMAND tests/all
+  COMMAND = cmd.exe /C "cd /D C:\Users\39393\Desktop\RealNote\cmake-build-debug\tests && "C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build tests/install/strip: phony tests/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Target aliases.
 
-build GoogleTest_run: phony GoogleTest/GoogleTest_run.exe
+build Main: phony src/Main.exe
 
-build GoogleTest_run.exe: phony GoogleTest/GoogleTest_run.exe
+build Main.exe: phony src/Main.exe
 
-build RealNote: phony RealNote.exe
+build Tests: phony tests/Tests.exe
+
+build Tests.exe: phony tests/Tests.exe
 
 build gmock: phony lib/libgmock.a
 
@@ -637,35 +738,42 @@ build libgtest_main.a: phony lib/libgtest_main.a
 #############################################
 # Folder: C:/Users/39393/Desktop/RealNote/cmake-build-debug
 
-build all: phony RealNote.exe GoogleTest/all
+build all: phony lib/googletest-main/all src/all tests/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/39393/Desktop/RealNote/cmake-build-debug/GoogleTest
+# Folder: C:/Users/39393/Desktop/RealNote/cmake-build-debug/lib/googletest-main
 
-build GoogleTest/all: phony GoogleTest/GoogleTest_run.exe GoogleTest/lib/all
-
-# =============================================================================
-
-#############################################
-# Folder: C:/Users/39393/Desktop/RealNote/cmake-build-debug/GoogleTest/lib
-
-build GoogleTest/lib/all: phony GoogleTest/lib/googlemock/all
+build lib/googletest-main/all: phony lib/googletest-main/googlemock/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/39393/Desktop/RealNote/cmake-build-debug/GoogleTest/lib/googlemock
+# Folder: C:/Users/39393/Desktop/RealNote/cmake-build-debug/lib/googletest-main/googlemock
 
-build GoogleTest/lib/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a GoogleTest/lib/googletest/all
+build lib/googletest-main/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a lib/googletest-main/googletest/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/39393/Desktop/RealNote/cmake-build-debug/GoogleTest/lib/googletest
+# Folder: C:/Users/39393/Desktop/RealNote/cmake-build-debug/lib/googletest-main/googletest
 
-build GoogleTest/lib/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
+build lib/googletest-main/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/39393/Desktop/RealNote/cmake-build-debug/src
+
+build src/all: phony src/Main.exe
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/39393/Desktop/RealNote/cmake-build-debug/tests
+
+build tests/all: phony tests/Tests.exe
 
 # =============================================================================
 # Built-in targets
@@ -674,14 +782,14 @@ build GoogleTest/lib/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/39393/Desktop/RealNote/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/GoogleTest/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/cmake/gmock.pc.in C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/cmake/gmock_main.pc.in C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/cmake/Config.cmake.in C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/cmake/gtest.pc.in C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/cmake/gtest_main.pc.in C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/39393/Desktop/RealNote/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/lib/googletest-main/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/cmake/gmock.pc.in C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/cmake/gmock_main.pc.in C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/cmake/Config.cmake.in C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/cmake/gtest.pc.in C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/cmake/gtest_main.pc.in C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/cmake/internal_utils.cmake C$:/Users/39393/Desktop/RealNote/src/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/tests/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/39393/Desktop/RealNote/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/GoogleTest/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/cmake/gmock.pc.in C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googlemock/cmake/gmock_main.pc.in C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/cmake/Config.cmake.in C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/cmake/gtest.pc.in C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/cmake/gtest_main.pc.in C$:/Users/39393/Desktop/RealNote/GoogleTest/lib/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDependentOption.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakePackageConfigHelpers.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/WindowsPaths.cmake C$:/Program$ Files/JetBrains/CLion$ 2023.3.4/bin/cmake/win/x64/share/cmake-3.27/Modules/WriteBasicConfigVersionFile.cmake C$:/Users/39393/Desktop/RealNote/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/lib/googletest-main/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/cmake/gmock.pc.in C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googlemock/cmake/gmock_main.pc.in C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/cmake/Config.cmake.in C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/cmake/gtest.pc.in C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/cmake/gtest_main.pc.in C$:/Users/39393/Desktop/RealNote/lib/googletest-main/googletest/cmake/internal_utils.cmake C$:/Users/39393/Desktop/RealNote/src/CMakeLists.txt C$:/Users/39393/Desktop/RealNote/tests/CMakeLists.txt CMakeCache.txt CMakeFiles/3.27.8/CMakeCCompiler.cmake CMakeFiles/3.27.8/CMakeCXXCompiler.cmake CMakeFiles/3.27.8/CMakeRCCompiler.cmake CMakeFiles/3.27.8/CMakeSystem.cmake: phony
 
 
 #############################################

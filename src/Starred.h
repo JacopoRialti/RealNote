@@ -1,0 +1,31 @@
+//
+// Created by 39393 on 12/03/2024.
+//
+
+#ifndef REALNOTE_STARRED_H
+#define REALNOTE_STARRED_H
+
+#include "Collection.h"
+
+class Starred : public Collection{
+public:
+
+    static Starred* getInstance();
+
+    ~Starred() override = default;
+
+    void addNoteToCollection(Note *new_note) override;
+
+    bool removeNoteFromCollection(int index) override;
+
+    void update(Note &note) override;
+
+    void showCollection() override;
+
+private:
+    Starred(): Collection("Starred"){};
+    static Starred* instance;
+};
+
+
+#endif //REALNOTE_STARRED_H

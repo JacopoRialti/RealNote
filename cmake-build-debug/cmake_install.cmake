@@ -38,8 +38,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Users/39393/Desktop/RealNote/cmake-build-debug/GoogleTest/cmake_install.cmake")
+  # Include the install script for each subdirectory.
+  include("C:/Users/39393/Desktop/RealNote/cmake-build-debug/lib/googletest-main/cmake_install.cmake")
+  include("C:/Users/39393/Desktop/RealNote/cmake-build-debug/src/cmake_install.cmake")
+  include("C:/Users/39393/Desktop/RealNote/cmake-build-debug/tests/cmake_install.cmake")
+
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
