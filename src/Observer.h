@@ -10,6 +10,7 @@ class Note;
 
 class Observer {
 public:
+    //Push Update the observer
     virtual void update(Note& note) = 0;
     virtual ~Observer() = default;
 };

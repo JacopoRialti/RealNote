@@ -10,6 +10,7 @@
 
 class Collection : public Observer{
 public:
+
     //Constructor and empty constructor
     Collection(std::string name);
 
@@ -18,9 +19,10 @@ public:
     //Destructor
     ~Collection() override;
 
-    //Add and remove notes from the collection
+    //Add a note to the collection
     virtual void addNoteToCollection(Note *new_note);
 
+    //Remove a note from the collection with the index
     virtual bool removeNoteFromCollection(int index);
 
     //Modifies the title and text of the note

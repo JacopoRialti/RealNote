@@ -76,6 +76,7 @@ std::list<Note *> Collection::getNoteList() const
     return note_list;
 }
 
+//remove the note from the collection when it is deleted
 void Collection::update(Note &note)
 {
    note_list.remove(&note);

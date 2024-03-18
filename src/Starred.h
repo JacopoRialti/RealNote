@@ -9,11 +9,12 @@
 
 class Starred : public Collection{
 public:
-
+    //Singleton
     static Starred* getInstance();
 
     ~Starred() override = default;
 
+    //Add, remove, update and show the collection
     void addNoteToCollection(Note *new_note) override;
 
     bool removeNoteFromCollection(int index) override;
@@ -23,7 +24,9 @@ public:
     void showCollection() override;
 
 private:
+    //Constructor
     Starred(): Collection("Starred"){};
+    //Singleton instance
     static Starred* instance;
 };
 
