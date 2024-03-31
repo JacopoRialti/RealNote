@@ -23,6 +23,8 @@ public:
 
     void showCollection() override;
 
+    Note* searchNoteByNameInCollection(const std::string & title) override;
+
 private:
     //Constructor
     Starred(): Collection("Starred"){};

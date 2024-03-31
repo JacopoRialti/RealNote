@@ -3,8 +3,8 @@
 #include "src/Collection.h"
 #include "src/Starred.h"
 
-int main()
-{
+
+int main() {
     Note *nota_volo = new Note("Compare Volo", "Scegliere migliore data per viaggiare");
     Note *nota_bagaglio = new Note("Bagaglio", "Spazzolino, mutande");
     Collection volo_porto("Volo Porto");
@@ -16,6 +16,9 @@ int main()
     volo_porto.addNoteToCollection(nota_bagaglio);
     volo_porto.showCollection();
     std::cout << "\n\n";
+
+    std::cout << "Cerco la nota 'Bagaglio' usando il nome e printo il suo text " << std::endl;
+    std::cout << volo_porto.searchNoteByNameInCollection("Bagaglio")->getText() << "\n\n\n";
 
     std::cout << "Rimuovo la nota Bagaglio dalla collezione" << std::endl;
     volo_porto.removeNoteFromCollection(1);
@@ -43,7 +46,7 @@ int main()
     volo_porto.addNoteToCollection(nota_bagaglio);
     std::cout << "Riaggiungo e modifico la nota 'bagaglio' " << std::endl;
     std::string z = "Modifica nota_bagaglio";
-    nota_bagaglio->modifiyNote(z,z);
+    nota_bagaglio->modifiyNote(z, z);
     volo_porto.showCollection();
     std::cout << "\n\n";
 
@@ -57,6 +60,10 @@ int main()
     starred->addNoteToCollection(note3);
     starred->showCollection();
     std::cout << "\n\n";
+
+    std::cout << "Cerco la nota 'Note 2' usando il nome e printo il suo text " << std::endl;
+    std::cout << starred->searchNoteByNameInCollection("Note 2")->getText() << "\n\n\n";
+
     std::cout << "Rimuovo la note 1 dalla collezione" << std::endl;
     starred->removeNoteFromCollection(0);
     starred->showCollection();

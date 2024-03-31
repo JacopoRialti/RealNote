@@ -39,3 +39,7 @@ void Starred::showCollection() {
     std::cout << "Starred notes: " << std::endl;
     Collection::showCollection();
 }
+
+Note *Starred::searchNoteByNameInCollection(const std::string &title) {
+    return Collection::searchNoteByNameInCollection(title);
+}

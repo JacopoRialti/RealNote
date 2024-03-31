@@ -31,3 +31,13 @@ TEST(StarredTest, RemoveNoteFromCollectionTest) {
     starred->removeNoteFromCollection(0);
     EXPECT_EQ(starred->getNoteList().back()->getTitle(), "test2");
 }
+
+TEST(StarredTest, SearchNoteByNameInCollectionTest) {
+    Starred* starred = Starred::getInstance();
+    Note* note = new Note("test", "test");
+    Note* note2 = new Note("test2", "test2");
+    starred->addNoteToCollection(note);
+    starred->addNoteToCollection(note2);
+    Note* found = starred->searchNoteByNameInCollection("test2");
+    EXPECT_EQ(found->getTitle(), "test2");
+}

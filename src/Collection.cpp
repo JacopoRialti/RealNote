@@ -91,3 +91,13 @@ void Collection::showCollection()
         index++;
     }
 }
+
+Note* Collection::searchNoteByNameInCollection(const std::string& title)
+{
+    for (Note* note : note_list) {
+        if (note->getTitle() == title) {
+            return note;
+        }
+    }
+    return nullptr;
+}

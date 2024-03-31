@@ -76,5 +76,10 @@ TEST(CollectionTest, GetNoteListTest) {
     EXPECT_EQ(collection.getNoteList().front(), note);
 }
 
-
+TEST(CollectionTest, SearchNoteByNameInCollectionTest) {
+    Collection collection("Test Collection");
+    Note* note = new Note("test name", "test");
+    collection.addNoteToCollection(note);
+    EXPECT_EQ(collection.searchNoteByNameInCollection("test name"), note);
+}
 

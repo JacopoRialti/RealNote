@@ -31,6 +31,8 @@ public:
     //search for a note in the collection
     bool searchNoteInCollection(Note &note);
 
+    virtual Note* searchNoteByNameInCollection(const std::string & title);
+
     //Getters and Setters
     std::string getName() const;
 
