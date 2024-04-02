@@ -83,3 +83,16 @@ TEST(CollectionTest, SearchNoteByNameInCollectionTest) {
     EXPECT_EQ(collection.searchNoteByNameInCollection("test name"), note);
 }
 
+// Test modifying a locked note
+TEST(CollectionTest, ModifyLockedNote) {
+    Collection collection("Test Collection");
+    Note* note = new Note("Test Note", "Test Text");
+    note->setLocked(true);
+    collection.addNoteToCollection(note);
+    bool result = collection.modifyNoteInCollection(0, "New Title", "New Text");
+    EXPECT_FALSE(result);
+}
+
+
+
+
